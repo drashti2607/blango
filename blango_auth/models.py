@@ -36,9 +36,7 @@ class User(AbstractUser):
         _("email address"),
         unique=True,
     )
-
     objects = BlangoUserManager()
-
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
